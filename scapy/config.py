@@ -615,7 +615,7 @@ recv_poll_rate: how often to check for new packets. Defaults to 0.05s.
     load_layers = ['bluetooth', 'bluetooth4LE', 'dhcp', 'dhcp6', 'dns',
                    'dot11', 'dot15d4', 'eap', 'gprs', 'hsrp', 'inet',
                    'inet6', 'ipsec', 'ir', 'isakmp', 'l2', 'l2tp',
-                   'llmnr', 'lltd', 'mgcp', 'mobileip', 'netbios',
+                   'llmnr', 'lltd', 'loop', 'mgcp', 'mobileip', 'netbios',
                    'netflow', 'ntp', 'ppp', 'pptp', 'radius', 'rip',
                    'rtp', 'sctp', 'sixlowpan', 'skinny', 'smb', 'snmp',
                    'tftp', 'vrrp', 'vxlan', 'x509', 'zigbee']
