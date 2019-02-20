@@ -4,7 +4,7 @@
 ## Copyright (C) Philippe Biondi <phil@secdev.org>
 ## This program is published under a GPLv2 license
 
-import scapy.arch
+from scapy.consts import OPENBSD
 from scapy.packet import *
 from scapy.fields import *
 from scapy.layers.inet import IP
@@ -25,7 +25,7 @@ bind_layers(Loop, IP, addrfamily=socket.AF_INET)
 if conf.ipv6_enabled:
     bind_layers(Loop, IPv6, addrfamily=socket.AF_INET6)
 
-if scapy.arch.OPENBSD:
+if OPENBSD:
     conf.l2types.register(12, Loop)
 else:
     conf.l2types.register(108, Loop)
